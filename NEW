@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*uint a, b;
+            Console.WriteLine("Podaj liczbę a: ");
+            if (uint.TryParse(Console.ReadLine(), out a))
+            {
+                Console.WriteLine("Podaj liczbę b: ");
+                if (uint.TryParse(Console.ReadLine(), out b))
+                {
+                    while (a != b)
+                    {
+                        if (a > b) a = b - b; break;
+                        else b = b - a;
+                        Console.WriteLine("a={0} b={1}",a,b);
+                    }
+                    Console.WriteLine("NWD wynosi: {0}",a);
+                }
+                else Console.WriteLine("Niepoprawne b");
+                
+            }
+            */
+            /*
+            uint a, b;
+            Console.WriteLine("Podaj liczbę a: ");
+            if (uint.TryParse(Console.ReadLine(), out a))
+            {
+                uint suma = 0;
+                while (a > 0)
+                {
+                    suma += a % 10;
+                    a = a / 10;
+                    Console.WriteLine("a={0}", a);
+                }
+                Console.WriteLine("Suma cyfr: {0}", suma);
+            }
+            else Console.WriteLine("Niepoprawne a");
+            */
+            /*double a, b, c;
+            do
+            {
+                Console.WriteLine("Podaj 3 liczby dodatnie: ");
+                a = double.Parse(Console.ReadLine());
+                b = double.Parse(Console.ReadLine());
+                c = double.Parse(Console.ReadLine());
+                if (a <= 0 || b <= 0 || c <= 0)
+                    Console.WriteLine("Wszystkie liczby miały byc dodatnie");
+                if (a >= 0 || b >= 0 || c >= 0)
+                    Console.WriteLine("Wszyskie liczby są dodatnie");
+            }
+            while (a <= 0 || b <= 0 || c <= 0);
+            */
+            /*string login, haslo;
+            int licznik = 0;
+            do
+            {
+                Console.WriteLine("Podaj login: ");
+                login = Console.ReadLine();
+                Console.WriteLine("Podaj hasło: ");
+                haslo = Console.ReadLine();
+                if (login.ToLower() != "wsb" || haslo != "makumba")
+                {
+                    Console.WriteLine("Hasło lub login niepoprawne");
+                    licznik++;
+                }
+                if (login == "wsb" || haslo == "makumba")
+                {
+                    Console.WriteLine("Hasło i login poprawne");
+                }
+                if (licznik == 3)
+                {
+                    Console.WriteLine("Wykorzystałeś licznik 3 prób logowania.");
+                    Thread.Sleep(1000);
+                    Environment.Exit(0);
+                }
+            }
+            while (login != "wsb" || haslo != "makumba");
+            */
+        }
+    }
+}
